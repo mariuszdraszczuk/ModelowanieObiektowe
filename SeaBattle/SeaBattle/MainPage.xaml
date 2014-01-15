@@ -1,0 +1,46 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="SeaBattle.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Margin="12,17,0,567">
+            <TextBlock x:Name="ApplicationTitle" Text="Sea Battle" Style="{StaticResource PhoneTextNormalStyle}" TextAlignment="Center" />
+            <TextBlock x:Name="PageTitle" Text="Menu" Margin="9,20,0,0" Style="{StaticResource PhoneTextTitle1Style}" TextAlignment="Center" Height="141" FontSize="90" />
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="12,207,12,0">
+            <Button Content="Nowa Gra" Height="72" HorizontalAlignment="Left" Margin="35,60,0,0" Name="button1" VerticalAlignment="Top" Width="403" Padding="10,3,10,5" Click="button1_Click" />
+            <Button Content="Wczytaj Gre" Height="72" HorizontalAlignment="Left" Margin="35,138,0,0" Name="B_Load" Padding="10,3,10,5" VerticalAlignment="Top" Width="403" Click="B_Load_Click" />
+            <Button Content="Opcje" Height="72" HorizontalAlignment="Left" Margin="34,216,0,0" Name="B_Options" Padding="10,3,10,5" VerticalAlignment="Top" Width="403" Click="B_Options_Click" />
+            <Button Content="Statystki" Height="72" HorizontalAlignment="Left" Margin="34,294,0,0" Name="B_Statistics" Padding="10,3,10,5" VerticalAlignment="Top" Width="403" Click="B_Statistics_Click" />
+            <Button Content="Generator Mapy" Height="72" HorizontalAlignment="Left" Margin="35,372,0,0" Name="B_MapGenerator" Padding="10,3,10,5" VerticalAlignment="Top" Width="403" Click="B_MapGenerator_Click" />
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>
